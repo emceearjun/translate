@@ -1,6 +1,11 @@
 # translate
 <b>translate</b> provides a simple extension to help integrate internationalization with your Angular application.
 
+## Installation
+```posh
+npm install @emceearjun/translate --save-dev
+```
+
 ## Usage
 
 #### Component
@@ -10,7 +15,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { TranslateModule } from 'projects/translate/src/lib/translate.module';
+import { TranslateModule } from '@emceearjun/translate';
 
 @NgModule({
   declarations: [
