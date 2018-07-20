@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { ChangeDetectorRef, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Globals } from './globals';
 
@@ -14,7 +14,7 @@ export class TranslateService {
     private _httpClient: HttpClient,
     private _globals: Globals
   ) {
-    this._globals.LOCALE = this.getLocaleFromUrl();
+    this._globals.updateLocale(this.getLocaleFromUrl(), null);
   }
 
   public getResource(url: string): Observable<Object> {
@@ -29,5 +29,12 @@ export class TranslateService {
         return paramArr[1];
       }
     }
+  }
+
+  public setLocale(locale: string): void {
+    this.getResource('../assets/' + locale + '.json').subscribe(
+      (data) => {
+        this._globals.updateLocale(locale, data);
+      });
   }
 }
