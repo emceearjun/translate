@@ -18,12 +18,12 @@ export class TranslatePipe implements PipeTransform {
     const subject = new Subject();
 
     // In case locale isn't provided in URL
-    if (!this._globals.LOCALE) {
+    if (!this._globals.getLocale()) {
       return of(key);
     }
 
     this._translateService
-      .getResource("../assets/" + this._globals.LOCALE + ".json")
+      .getResource("../assets/" + this._globals.getLocale() + ".json")
       .subscribe(
         (data) => {
           const keyList = key.split(".");

@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ChangeDetectorRef, NgModule } from '@angular/core';
+import { Globals } from './globals';
 import { TranslateComponent } from './translate.component';
 import { TranslatePipe } from './translate.pipe';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { TranslateService } from './translate.service';
-import { Globals } from './globals';
 
 @NgModule({
   imports: [
