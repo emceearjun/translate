@@ -1,8 +1,28 @@
 {
-  "name": "translate",
-  "version": "0.0.1",
+  "name": "@emceearjun/translate",
+  "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
-  }
+  },
+  "description": "<b>translate</b> provides a simple extension to help integrate internationalization with your Angular application.",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emceearjun/translate.git"
+  },
+  "keywords": [
+    "translate",
+    "i18n",
+    "angular"
+  ],
+  "author": "Arjun Chokkamaman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emceearjun/translate/issues"
+  },
+  "homepage": "https://github.com/emceearjun/translate#readme"
 }
