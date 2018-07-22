@@ -51,8 +51,8 @@ Now, use the `translate` pipe in your template file as follows:
 #### Running the application
 For your translation to work, you need to provide your locale as a search parameter with your URL:
 ```
-http://localhost:4200/?locale=en
-http://localhost:4200/?locale=fr
+http://localhost:4200/?lang=en
+http://localhost:4200/?lang=fr
 ```
 
 Voila! That's it!
